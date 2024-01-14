@@ -1,8 +1,17 @@
-# Set the minimum required version of CMake
-cmake_minimum_required(VERSION 3.8)
+# CMakeLists.txt
 
-# Project name
-project(HelloWorld)
+cmake_minimum_required(VERSION 3.10)
 
-# Add the executable
-add_executable(hello hello.c)
+project(HelloWorldProject)
+
+# Set the source files
+set(SOURCE_FILES
+    src/main.c
+    src/hello.c
+)
+
+# Set the include directories
+include_directories(include)
+
+# Create the executable
+add_executable(hello_world ${SOURCE_FILES})
