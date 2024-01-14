@@ -1,0 +1,3 @@
+D:/2024/VScode/GIT/repo/Cmake-hello/CMAKE-hello/build/CMakeFiles/hello.dir
+D:/2024/VScode/GIT/repo/Cmake-hello/CMAKE-hello/build/CMakeFiles/edit_cache.dir
+D:/2024/VScode/GIT/repo/Cmake-hello/CMAKE-hello/build/CMakeFiles/rebuild_cache.dir
