@@ -116,41 +116,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello
+# Target rules for targets named hello_world
 
 # Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 hello
-.PHONY : hello
+hello_world: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 hello_world
+.PHONY : hello_world
 
 # fast build rule for target.
-hello/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+hello_world/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_world.dir\build.make CMakeFiles/hello_world.dir/build
+.PHONY : hello_world/fast
 
-hello.obj: hello.c.obj
-.PHONY : hello.obj
+src/hello.obj: src/hello.c.obj
+.PHONY : src/hello.obj
 
 # target to build an object file
-hello.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/hello.c.obj
-.PHONY : hello.c.obj
+src/hello.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_world.dir\build.make CMakeFiles/hello_world.dir/src/hello.c.obj
+.PHONY : src/hello.c.obj
 
-hello.i: hello.c.i
-.PHONY : hello.i
+src/hello.i: src/hello.c.i
+.PHONY : src/hello.i
 
 # target to preprocess a source file
-hello.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/hello.c.i
-.PHONY : hello.c.i
+src/hello.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_world.dir\build.make CMakeFiles/hello_world.dir/src/hello.c.i
+.PHONY : src/hello.c.i
 
-hello.s: hello.c.s
-.PHONY : hello.s
+src/hello.s: src/hello.c.s
+.PHONY : src/hello.s
 
 # target to generate assembly for a file
-hello.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello.dir\build.make CMakeFiles/hello.dir/hello.c.s
-.PHONY : hello.c.s
+src/hello.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_world.dir\build.make CMakeFiles/hello_world.dir/src/hello.c.s
+.PHONY : src/hello.c.s
+
+src/main.obj: src/main.c.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_world.dir\build.make CMakeFiles/hello_world.dir/src/main.c.obj
+.PHONY : src/main.c.obj
+
+src/main.i: src/main.c.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_world.dir\build.make CMakeFiles/hello_world.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hello_world.dir\build.make CMakeFiles/hello_world.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -160,10 +184,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... hello
-	@echo ... hello.obj
-	@echo ... hello.i
-	@echo ... hello.s
+	@echo ... hello_world
+	@echo ... src/hello.obj
+	@echo ... src/hello.i
+	@echo ... src/hello.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 

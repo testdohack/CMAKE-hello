@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/2024/VScode/GIT/repo/Cmake-hello/CMAKE-hello/hello.c" "CMakeFiles/hello.dir/hello.c.obj" "gcc" "CMakeFiles/hello.dir/hello.c.obj.d"
+  "D:/2024/VScode/GIT/repo/Cmake-hello/CMAKE-hello/src/hello.c" "CMakeFiles/hello_world.dir/src/hello.c.obj" "gcc" "CMakeFiles/hello_world.dir/src/hello.c.obj.d"
+  "D:/2024/VScode/GIT/repo/Cmake-hello/CMAKE-hello/src/main.c" "CMakeFiles/hello_world.dir/src/main.c.obj" "gcc" "CMakeFiles/hello_world.dir/src/main.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

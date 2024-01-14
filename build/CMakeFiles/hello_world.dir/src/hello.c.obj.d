@@ -1,5 +1,5 @@
-CMakeFiles/hello.dir/hello.c.obj: \
- D:\2024\VScode\GIT\repo\Cmake-hello\CMAKE-hello\hello.c \
+CMakeFiles/hello_world.dir/src/hello.c.obj: \
+ D:\2024\VScode\GIT\repo\Cmake-hello\CMAKE-hello\src\hello.c \
  C:/PROGRA~1/CODEBL~1/MinGW/x86_64-w64-mingw32/include/stdio.h \
  C:/PROGRA~1/CODEBL~1/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
  C:/PROGRA~1/CODEBL~1/MinGW/x86_64-w64-mingw32/include/_mingw.h \
@@ -12,4 +12,5 @@ CMakeFiles/hello.dir/hello.c.obj: \
  C:/PROGRA~1/CODEBL~1/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/PROGRA~1/CODEBL~1/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
  C:/PROGRA~1/CODEBL~1/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:/PROGRA~1/CODEBL~1/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h
+ C:/PROGRA~1/CODEBL~1/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ D:/2024/VScode/GIT/repo/Cmake-hello/CMAKE-hello/include/hello.h

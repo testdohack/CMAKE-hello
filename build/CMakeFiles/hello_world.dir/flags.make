@@ -4,7 +4,7 @@
 # compile C with C:/Program Files/CodeBlocks/MinGW/bin/gcc.exe
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = @CMakeFiles/hello_world.dir/includes_C.rsp
 
 C_FLAGS = 
 
